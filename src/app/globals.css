@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 255 139 0;
+    --color-secondary: 11 37 70;
+    --color-accent: 54 179 126;
+    --color-alert: 255 86 48;
+    --color-neutral: 140 107 79;
+  }
+}
+
+@layer components {
+  .bracket-container {
+    @apply grid grid-cols-6 gap-4 p-4 overflow-x-auto;
+  }
+
+  .game-card {
+    @apply bg-white rounded-lg shadow-md p-4 border border-gray-200;
+  }
+
+  .team-row {
+    @apply flex items-center justify-between p-2 rounded hover:bg-gray-50 cursor-pointer;
+  }
+
+  .score-display {
+    @apply font-mono text-lg font-bold;
+  }
+
+  .live-indicator {
+    @apply animate-pulse text-alert font-bold;
+  }
+
+  .prediction-correct {
+    @apply text-accent font-bold;
+  }
+
+  .prediction-incorrect {
+    @apply text-alert font-bold line-through;
+  }
+} 

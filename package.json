@@ -1,0 +1,38 @@
+{
+  "name": "march-madness-predictor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^2.4.0",
+    "@vercel/analytics": "^1.2.0",
+    "@vercel/kv": "^1.0.0",
+    "axios": "^1.6.7",
+    "ioredis": "^5.6.0",
+    "next": "13.5.6",
+    "next-auth": "^4.24.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "stripe": "^14.14.0",
+    "swr": "^2.2.4",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "devDependencies": {
+    "@types/next-auth": "^3.15.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6",
+    "postcss": "^8",
+    "typescript": "^5"
+  }
+}
